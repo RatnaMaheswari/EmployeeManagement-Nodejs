@@ -1,0 +1,67 @@
+[
+
+{
+      
+      "employee_id":"HCL12",
+      "employee_name":"RATHNA",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhauN4cTWVrUCU1fQ9hvbicAytE-8O3t2depAD8l5q6J8PD6wGaOCKKuZQVKtH5-BTCqY&usqp=CAU",
+      "department":"Admin",
+      "role":"Backend Developer",
+      "salary":{
+         "$numberInt":"70000"
+      },
+      "email":"admin@centrovo.com",
+      "date_of_joining":"12-06-2016",
+      "location":{
+         "street":"Spring street",
+         "city":"West Haven",
+         "state":"CT",
+         "zip":"06516"
+      },
+      "contact_number":"+1 474-233-7218",
+      "reporting_to":"Kranthi Rekha"
+   },
+   
+  
+   {
+      "employee_id":"HCL13",
+      "employee_name":"KARTHIK",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhauN4cTWVrUCU1fQ9hvbicAytE-8O3t2depAD8l5q6J8PD6wGaOCKKuZQVKtH5-BTCqY&usqp=CAU",
+      "department":"Admin",
+      "role":"Front End Developer",
+      "salary":{
+         "$numberInt":"80000"
+      },
+      "email":"admin@hcl.com",
+      "date_of_joining":"08-02-2022",
+      "location":{
+         "street":"Spring Lane",
+         "city":"North Haven",
+         "state":"CT",
+         "zip":"06523"
+      },
+      "contact_number":"+1 404-233-7961",
+      "reporting_to":"Kranthi Rekha"
+   },
+  
+   {
+      "employee_id":"HCL14",
+      "employee_name":"GUPTHA",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhauN4cTWVrUCU1fQ9hvbicAytE-8O3t2depAD8l5q6J8PD6wGaOCKKuZQVKtH5-BTCqY&usqp=CAU",
+      "department":"Admin",
+      "role":"Devops Engineer",
+      "salary":{
+         "$numberInt":"50000"
+      },
+      "email":"admin@hcl.com",
+      "date_of_joining":"10-09-2017",
+      "location":{
+         "street":"Church street",
+         "city":"NJ",
+         "state":"NJ",
+         "zip":"06321"
+      },
+      "contact_number":"+1 476-201-7219",
+      "reporting_to":"Kranthi Rekha"
+   }
+]

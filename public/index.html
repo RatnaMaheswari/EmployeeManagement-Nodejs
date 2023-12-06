@@ -1,0 +1,367 @@
+<html>
+    <head>
+
+         
+        <title>Rathnaresume.com</title>
+        
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+        <style>
+           :root{
+
+--main-radius: 8px;
+--main-padding:8px;
+--blue:rgb(155, 232, 216);
+--white: rgb(248, 253, 207); 
+--yellowish:rgb(195, 237, 192);
+
+}
+
+.container{
+display: grid;
+position:relative;
+
+height: 100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr; 
+grid-template-rows:0.1fr 1.2fr 1.2fr 0.8fr ;
+grid-template-areas:
+"nav nav nav nav"
+"main main main main"
+"content1 content1 content1 content1"
+"content2 content2 content2 content2"
+"content3 content3 content3 content3"
+"content4 content4 content4 content4"
+"footer footer footer footer";
+grid-gap:0.3rem;
+font-family: 'Noto Serif', serif;
+font-weight: 800;
+font-size: 1EM;
+color: #100f0f;
+
+
+}
+
+
+nav{
+background: rgb(248, 253, 207);
+grid-area: nav;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+
+@media (min-width: 500px){
+    padding: 20px;
+}
+}
+.main{
+background:rgb(155, 232, 216);
+grid-area: main;
+
+border-radius: var(--main-radius);
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+@media (min-width: 500px){
+    padding: 20px;
+}
+}
+
+
+#content1{
+background:var(--yellowish);
+grid-area: content1;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+@media (min-width: 500px){
+    padding: 20px;
+}
+}
+
+#content2{
+background:var(--white);
+grid-area: content2;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+@media (min-width: 500px){
+    padding: 20px;
+}
+
+}
+#content3{
+
+background: var(--blue);
+grid-area: content3;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+@media (min-width: 500px){
+    padding: 20px;
+}
+
+}
+#content4{
+
+background: var(--white);
+grid-area: content4;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+@media (min-width: 500px){
+    padding: 20px;
+}
+
+}
+footer{
+background:rgb(195, 237, 192);
+grid-area: footer;
+border-radius: var(--main-radius);
+padding: var(--main-padding);
+}
+
+#black{
+color: black;
+
+
+}
+
+.profile{
+float:right;
+}
+
+table{
+border: 1px solid black;
+border-spacing: 5px;
+font-family: 'Noto Serif' serif;
+}
+.fa-facebook {
+background: #3B5998;
+ color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+.about{
+background-color:Lightyellow;
+font-family: 'Noto Serif' serif;
+font-size: 1em;
+height: 100px;
+
+
+}
+#contact{
+background-color: mistyrose;
+text-align: center;
+font-family: 'Noto Serif' serif;
+
+}
+
+.container .icon{
+display: none;
+}
+
+@media only screen and (max-width:500px){
+
+.container a:not(:first-child){
+    display: none;
+}
+
+.container a.icon{
+    float:right;
+    display: block;
+    float: right;
+}
+
+.container.nav.responsive a{
+    position: relative;
+    float:none;
+    display: block;
+    text-align: left;
+    right: 0;
+    top:0;
+}
+.container.nav.responsive .icon{
+    position:absolute;
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+.container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr
+                1.2fr 1.2fr 1.2fr 1.2fr;
+
+    grid-template-areas:
+    "nav"
+    
+    "main"
+    "content1"
+    "content2"
+    "content3"
+    "content4"
+    "footer";
+
+    row-gap: 0.5rem ;
+}
+#sidebar{
+    display: none;
+}
+
+}
+}
+        </style>
+
+    </head>
+
+    <script>
+        function navigationMenu() {
+          var x = document.getElementById("navmenu");
+          if (x.className === "container") {
+            x.className += "  responsive";
+          } else {
+            x.className = "container";
+          }
+        }
+        </script>
+
+    
+    <body>
+
+
+        <div class="container">
+
+        <nav> 
+   
+        <a  href="#main">Home</a>
+
+        <a  href="#content1">Education</a>
+        
+        <a  href="#content2">Experience</a>
+        
+        <a  href="#content3">Blogs</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="navigationMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+
+        </nav>
+
+        
+
+        <div class="main">
+
+            
+        <img class="profile" src="https://tse4.mm.bing.net/th?id=OIP.xwOQTGwX743eoeC_roPgxQAAAA&pid=Api&P=0&h=180" width="200px" height="150px"> 
+            
+
+        <h1 id= "black">Rathna Maheshwari Nidamanuri</h1>
+        <h4 id= "black"><u>Email:</u> Rathna359@gmail.com</h4>
+        <h4 id= "black"><u>Contact Number:</u> +1-475-301-9785</h4>
+        <h4 id= "black"><u>LinkedIN:</u><a href="https://www.linkedin.com/in/Rathna/"> https://www.linkedin.com/in/Rathna/</a> </h4>
+
+
+            <h1 id="black" style="padding-top: 10px;"><u>Profile</u></h1>
+           
+            <p id="black">Experienced Java, Spring Boot and Microservices Developer and had good knowledge on Azure Cloud and SQLserver and had a good                       		experience in Scrum Master Role. Had a good experience in Agile Methodology and knowledge on Python Dev. Had an educational background of 4+ 		years in   Computer Science and ability to communicate effectively in group and interpersonal settings by managing work-place stress to 		provide quality and meet deadlines, currently looking for an developer/Consultant position to gain practical knowledge by applying skills 		that I presently possess. 
+                </p>
+
+        
+        </div> 
+       
+
+        <div id="content1">
+
+            <h1><u>Education</u></h1>
+
+                <h5>Masters in Computer Science  -  University of New Heaven</h5>
+                <h5>Bachelors in Computer Science -  QIS College of Engineering</h5>
+                <h5>High School - Sri Sai High School</h5>
+
+
+        </div>
+
+        <div id="content2">
+
+                <h1><u>Experience</u></h1>
+                <h3>HCL Technologies 2019-2021</h3>
+                <h5>Software Engineer</h5>
+                <ol>
+                    <li>Developing Rest Endpoints for ING Bank</li>
+                    <li>Experience in working with Azure DevOps</li>
+                    <li>Experience in Junit and Mokito</li>
+                    <li>Good Experience in Scrum Master role</li>
+                    <li>Maintain a positive and professional attitude towards client</li>
+                </ol>
+
+                <h3>Wipro Private Limited   2021-2022</h3>
+                <h5>Senior Software Engineer</h5>
+                <ol>
+                    <li>Experience in working with wire frames</li>
+                    <li>Experience in working with Azure DevOps cloud</li>
+                    <li>Experience in Regression Testing</li>
+                </ol>
+
+        </div>
+        <div id="content3">
+                    <h1><u>Blog</u></h1>
+                    <ol>
+                        <li><a href="https://www.rathnaMaheshwari.designs.com">https://www.rathnaMaheshwari.designs.com</a></li>
+                        <li><a href="https://www.rathnaMaheshwari.appdeveloper.com">https://www.rathnaMaheshwari.appdeveloper.com</a></li>
+                        <li><a href="https://www.rathnaMaheshwari.clouddeveloper.com">https://www.rathnaMaheshwari.clouddeveloper.com</a></li>
+                        <li><a href="https://www.rathnaMaheshwari/reporting.com">https://www.rathnaMaheshwari/reporting.com</a></li>
+                    </ol>
+                
+
+               
+
+        </div>
+
+              
+
+        <div id="content4">
+
+                <h1><u>Technical Skills</u></h1>
+                <h5>Programming Languages: C, C++, Java</h5>
+                <h5>Database: SQL</h5>
+                <h5>Cloud Technologies: Azure, AWS</h5>
+                <h5>Web Technologies: HTML, CSS</h5>      
+
+
+        </div>
+                
+        <footer>
+                <h1>Follow US</h1>
+                
+                <a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G91766&p=facebook" class="fa fa-facebook"></a>
+                <a href="https://in.search.yahoo.com/search?fr=mcafee&type=E211IN714G91766&p=twitter" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+
+
+        </footer> 
+                
+
+        
+    </div>
+
+
+    </body>
+</html>
